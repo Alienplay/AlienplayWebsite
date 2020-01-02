@@ -1,6 +1,7 @@
 #mc_embed_signup {
     padding: 1em;
     margin: 2em auto;
+    margin-bottom: 4em;
 
     height: 7em;
     max-width: 26em;
@@ -20,9 +21,13 @@
     min-width: 8em;
     min-height: 2.25em;
 
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.25em;
 
     border-radius: 0.5em;
     border: solid rgba(0, 0, 0, 0.5) 1px;
+}
+
+#mc-embedded-subscribe {
+    margin-top: 1em;
 }
