@@ -33,22 +33,22 @@ header, section {
 }
 
 .gif-box {
-    margin: 3em 0;
+    margin: 3em auto;
+    max-width: 51em;
 
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
     justify-items: center;
-    grid-gap: 1em;
+    grid-gap: 0.5em;
 }
 .gif-box > img {
-    max-width: 400px;
+    max-width: 25em;
 }
 
 
 .spin-gif-outline > img {
-    border: solid rgba(219, 255, 61, 0.7) 2px;
-    border-radius: 0.5em;
+    border-radius: 0.25em;
 }
 
 
@@ -58,9 +58,19 @@ header, section {
 #spin-bg {
     background-color: #804f3d;
 }
-#white-text h1, #white-text h2, #white-text h3, #white-text h4, #white-text p, #white-text label, #white-text button, #white-text input, #white-text {
+
+
+.white-text h1, .white-text h2, .white-text h3, .white-text h4, .white-text p, .white-text label, .white-text button, .white-text input, .white-text {
     color: white;
 }
+.text-shadow {
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.9);
+}
+.box-shadow {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+
 
 
 
