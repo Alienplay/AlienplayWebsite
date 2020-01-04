@@ -1,18 +1,24 @@
+body {
+    font-size: 90%;
+}
+@media(max-width:60em){body{ font-size: 110% }}
+
+
 h1, h2, h3, h4, h5, h6, p, li, label, button, input {
     font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 300%;
 }
 h2 {
-    font-size: 2.25em;
+    font-size: 225%;
 }
 h3 {
-    font-size: 1.5em;
+    font-size: 150%;
 }
 h4 {
-    font-size: 1.25em;
+    font-size: 125%;
 }
 
 header, section {
@@ -78,8 +84,9 @@ header, section {
     margin: 5em 0;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     justify-items: center;
+    justify-content: center;
     grid-gap: 1em;
 }
 
