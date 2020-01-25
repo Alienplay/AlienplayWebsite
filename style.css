@@ -6,7 +6,7 @@ html {
 body {
     font-size: 90%;
 }
-@media(max-width:70em){body{ font-size: 130% }}
+@media(max-width:70em){body{ font-size: 200% }}
 
 h1 {
     font-size: 2.25em;
@@ -39,9 +39,15 @@ section > h4 {
 
 
 #alienplay-logo {
-    height: 2em;
-    width: 2em;
+    height: 3em;
+    width: 3em;
     margin-top: 1em;
+}
+@media(max-width:70em){
+#alienplay-logo {
+    height: 4em;
+    width: 4em;
+}  
 }
 
 #newsletter {
@@ -50,13 +56,17 @@ section > h4 {
     max-width: 25em;
     padding: 1em;
 }
+#newsletter > h1 {
+    font-weight: 700;
+}
 #newsletter-call-to-action {
     margin-top: 1.5em;
+    font-weight: 500;
 }
 #mc-embedded-subscribe{
     margin-top: 3em;
-    height: 38px;
-    width: 120px;
+    
+    padding: 10px 30px;
 
     border-radius: 4px;
     background-color: black;
@@ -64,16 +74,10 @@ section > h4 {
     color: white;
 
     font-family: 'Roboto', sans-serif;
-    font-size: 1em;
-    line-height: 19px;
+    font-size: 1.25em;
+    line-height: 120%;
     font-weight: 700;
     letter-spacing: 2px;
-}
-@media(max-width:70em){
-#mc-embedded-subscribe{
-    height: 42px;
-    width: 140px;
-}
 }
 
 
@@ -101,15 +105,18 @@ section > h4 {
 
 #games-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(407px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
 
     column-gap: 25px;
     row-gap: 56px;
+
+    margin: 0 3em;
 }
 
 
 .game > img {
-    max-height: 229px;
+    width: 100%;
+    object-fit: contain;
 }
 .game > h3 {
     margin-top: 1.5em;
@@ -117,8 +124,20 @@ section > h4 {
 }
 .game > p {
     margin-top: 0.75em;
-    font-size: 16px;
+    font-size: 16px;    
 }
+@media(max-width:70em){
+.game > h3 {
+    font-size: 42px;
+}
+.game > p {
+    font-size: 28px;
+}
+.game > button {
+    font-size: 24px;
+}
+}
+
 .game > button {
     margin-top: 1.5em;
     text-align: center;
@@ -126,8 +145,7 @@ section > h4 {
     font-size: 1em;
     line-height: 19px;
 
-    width: 75px;
-    height: 42px;
+    padding: 2em 3em;
 
     padding: 9px 12px 8px 12px;
     color:#A52129;
