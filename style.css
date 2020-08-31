@@ -101,11 +101,16 @@ section > h4 {
     margin-bottom: 96px;
 }
 
-
+@media(min-width:70em){
+    #more-games {
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+}
 
 #games-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
     column-gap: 25px;
     row-gap: 56px;
@@ -132,6 +137,7 @@ section > h4 {
 }
 .game > p {
     font-size: 28px;
+    line-height: 32px;
 }
 .game > button {
     font-size: 24px;
@@ -175,6 +181,7 @@ footer {
 footer > h4 {
     padding: 2em;
     line-height: 1.25em;
+    text-transform: none;
 }
 
 
