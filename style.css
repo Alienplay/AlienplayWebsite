@@ -64,7 +64,7 @@ section > h4 {
     font-weight: 500;
 }
 #mc-embedded-subscribe{
-    margin-top: 3em;
+    margin-top: 1.5em;
     
     padding: 10px 30px;
 
@@ -97,12 +97,12 @@ section > h4 {
 }
 
 
-#more-games {
+.more {
     margin-bottom: 96px;
 }
 
 @media(min-width:70em){
-    #more-games {
+    .more {
         margin-right: 200px;
         margin-left: 200px;
     }
@@ -185,3 +185,59 @@ footer > h4 {
 }
 
 
+#stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    row-gap: 4em;
+    column-gap: 5em;
+
+    justify-items: center;
+
+    margin-right: 250px;
+    margin-left: 250px;
+}
+@media(max-width:70em){
+    #stat-grid {
+        grid-template-columns: 1fr;
+
+        margin-right: 200px;
+        margin-left: 200px;
+    }
+}
+
+.stat {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+
+    column-gap: 2em;
+    width: 100%;
+
+    text-align: left;
+}
+.stat > img {
+    max-height: 30px;
+    justify-self: center;
+}
+
+
+#social-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
+    row-gap: 30px;
+
+    align-items: center;
+}
+@media(max-width:70em) {
+    #social-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 100px);
+    }
+}
+
+.social-icon > img {
+    max-height: 100px;
+}
