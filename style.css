@@ -114,8 +114,11 @@ section > h4 {
 
     column-gap: 25px;
     row-gap: 56px;
-
-    margin: 0 3em;
+}
+@media(max-width:70em){
+    #games-grid {
+        margin: 0 3em;
+    }
 }
 
 
@@ -187,15 +190,12 @@ footer > h4 {
 
 #stat-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(12em, 1fr) minmax(12em, 1fr) minmax(12em, 1fr);
 
     row-gap: 4em;
     column-gap: 5em;
 
     justify-items: center;
-
-    margin-right: 250px;
-    margin-left: 250px;
 }
 @media(max-width:70em){
     #stat-grid {
