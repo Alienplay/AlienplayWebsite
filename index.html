@@ -1,200 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
-    <title>Alienplay Games</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Web Page</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
-
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css" >
-
-
-
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119690365-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-119690365-1');
-    </script>
-
-    <!-- <script data-ad-client="ca-pub-4656293377683185" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="main-style.css">
+  <link rel="stylesheet" href="custom-style.css">
 
 </head>
 <body>
 
+  <div id="header">
 
-    <img id="alienplay-logo" src="logo.png" >
+    <img id="logo" src="images/alienplay white logo.png">
+    <h1><b>Alienplay</b> Games</h1>
 
-    <h4>ALIENPLAY GAMES</h4>
-    
+  </div>
 
-    <div id="newsletter">
+  <div id="main">
 
-        <h1>Stay up-to-date!</h1>
-
-        <h2 id="newsletter-call-to-action">Be first to know when I release new games</h2>
-
-        <!-- Begin Mailchimp Signup Form -->
-        <div id="mc_embed_signup">
-            <form action="https://instagram.us19.list-manage.com/subscribe/post?u=3fa32fa9bf465c5fe2652349b&amp;id=d8ade4e512" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <!--
-            <div class="mc-field-group">
-                <label for="mce-EMAIL">Email Address </label>
-                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-            </div>
-            <div class="mc-field-group">
-                <label for="mce-FNAME">First Name </label>
-                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
-            </div>
-            -->
-
-                <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3fa32fa9bf465c5fe2652349b_d8ade4e512" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                </div>
-            </form>
-        </div>
-        <!--End mc_embed_signup-->
-
+    <div id="web-games">
+      <h2>Web Games</h2>
+      <p>I have published 7 Web Games that were played more than <b>1.7 Million</b> times accross different Web Portals. In addition, my games won Kongregate's Monthly Contest 3 times.</p>
+      <a id="button" target="_blank" href="https://alienplay.itch.io">Play on Itch!</a>
     </div>
 
+    <div id="hc-games">
+      <h2>Hyper Casual Games</h2>
+      <p>Since November 2020 I started focusing on Hyper Casual genre and since then I made 10+ prototypes and tested them with multiple different publishers.</p>
+      <p></p>
+      <a id="button" target="_blank" href="https://apps.apple.com/us/developer/aleksandar-baranji/id1535069875">Go to App Store!</a>
+    </div>
 
-    <!--
-    <section id="coming-soon">
-        <h4>Coming soon</h4>
-        
-        <div>
-            <img src="game-imgs/spin-plus-transparent.png">
-        </div>
-        
-    </section>
-    -->
+  </div>
 
-    <section class="more">
-        <h4>My games</h4>
-
-
-        <div id="games-grid">
-
-            <div class="game">
-                <img src="game-imgs/tweak-shot.png">
-                <h3>Tweak Shot</h3>
-                <p>Tweak the positioning of platforms to make the ball bounce to the goal</p>
-                <button onclick=" window.open('https://alienplay.itch.io/tweak-shot','_blank')" >Play</button>
-            </div>
-
-            <div class="game">
-                <img src="game-imgs/spin.png">
-                <h3>Spin!</h3>
-                <p>Physics game in which you control the environment</p>
-                <button onclick=" window.open('https://alienplay.itch.io/spin','_blank')" >Play</button>
-            </div>
-
-
-            <div class="game">
-                <img src="game-imgs/reap.png">
-                <h3>Reap</h3>
-                <p>Throw spells to slow things down</p>
-
-                <button onclick=" window.open('https://alienplay.itch.io/reap','_blank')">Play</button>
-            </div>
-
-
-            <div class="game">
-                <img src="game-imgs/link-it-up.png">
-                <h3>Link It Up!</h3>
-                <p>Link up the line to make your way through the level</p>
-
-                <button onclick=" window.open('https://alienplay.itch.io/link-it-up','_blank')" >Play</button>
-            </div>
-
-
-            <div class="game">
-                <img src="game-imgs/fling.png">
-                <h3>Fling</h3>
-                <p>Grappling hook is the only way to move</p>
-
-                <button onclick=" window.open('https://alienplay.itch.io/fling','_blank')">Play</button>
-            </div>
-
-            <div class="game">
-                <img src="game-imgs/garage-apocalypse.jpeg">
-                <h3>Garage Apocalypse</h3>
-                <p>Survival game made in 7 days for Dev Squad Game Jam</p>
-
-                <button onclick=" window.open('https://www.y8.com/games/garage_apocalypse','_blank')">Play</button>
-            </div>
-
-            <div class="game">
-                <img src="game-imgs/jelly-shift.png">
-                <h3>Crazy Jelly Shift</h3>
-                <p>Hyper casual game clone I made in 3 days to test my skills</p>
-
-                <button onclick=" window.open('https://www.y8.com/games/crazy_jelly_shift','_blank')">Play</button>
-            </div>
-
-
-        </div>
-
-    </section>
-
-    <section class="more">
-        <h4>Accomplishments that I'm proud of</h4>
-
-        <div id="stat-grid">
-
-            <div class="stat">
-                <img src="stats/play-icon-red.png" />
-                <h3>>1,700,000 plays</h3>
-            </div>
-
-            <div class="stat">
-                <img src="stats/game-icon-red.png" />
-                <h3>7 published games</h3>
-            </div>
-
-            <div class="stat">
-                <img src="stats/award-icon-red.png" />
-                <h3>3 times Kongregate Monthly Contest Winner</h3>
-            </div>
-
-            
-
-        </div>
-
-    </section>
-
-    <!--
-    <section class="more">
-        <h4>Follow me at</h4>
-
-        <div id="social-grid">
-
-            <a href="https://alienplay.itch.io" target="_blank" class="social-icon"><img src="social/itch-logo.png" /></a>
-
-            <a href="https://gamejolt.com/@Alienplay/games" target="_blank" class="social-icon"><img src="social/gamejolt-logo.png" /></a>
-
-            <a href="https://twitter.com/alienplay_games" target="_blank" class="social-icon"><img src="social/twitter-logo.png" /></a>
-
-        </div>
-
-    </section>
-    -->
-
-    <footer>
-
-        <h4>Contact me via email: <span style="color:red">alienplay44@gmail.com</span> or on <a href="https://twitter.com/alienplay_games" target="_blank" style="color:lightskyblue; text-decoration: none;">Twitter</a></h4>
-    
-    </footer>
+  <div id="contact">
+    <div>
+      <p><b>Contact:</b> <a href="mailto:alienplay44@gmail.com">alienplay44@gmail.com</a></p>
+      <p><b>Twitter:</b> <a target="_blank" href="https://twitter.com/Alienplay_Games">https:https://twitter.com/Alienplay_Games</a></p>
+      <p><b>LinkedIn:</b> <a target="_blank" href="https://www.linkedin.com/in/aleksandar-b-768450187">https://www.linkedin.com/in/aleksandar-b-768450187</a></p>
+    </div>
+  </div>
 
 </body>
 </html>
