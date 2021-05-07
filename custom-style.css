@@ -78,6 +78,8 @@
   grid-column: 7 / 11;
 }
 #button {
+  margin-top: 1em;
+
   display: block;
   width: 100%;
   background-color: #262626;
@@ -90,7 +92,7 @@
   border-radius: 5px;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1050px) {
   #main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -119,13 +121,16 @@
   grid-template-columns: repeat(12, 1fr);
   
   column-gap: 1em;
-  row-gap: 1em;
+  row-gap: 2em;
 
-  margin: 0 3em;
+  margin: 0 3em 5em 3em;
 }
 #contact > div {
   grid-column: 3 / 11;
   margin: 0 1em;
+}
+#contact > div > p {
+  line-height: 2em;
 }
 #contact > div >p > a {
   color:  #737373;
